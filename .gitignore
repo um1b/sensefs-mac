@@ -69,3 +69,4 @@ ENV/
 docs/
 *.md
 !README.md
+*.txt
