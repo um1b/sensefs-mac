@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-struct License: Identifiable {
+struct License: Identifiable, Hashable {
     let id = UUID()
     let name: String
     let author: String
