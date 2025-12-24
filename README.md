@@ -354,24 +354,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Apple** for CoreML and Metal Performance Shaders
 - **swift-transformers** contributors
 
-## Support
 
-- 📧 Email: support@example.com
-- 🐛 Issues: [GitHub Issues](../../issues)
-- 💬 Discussions: [GitHub Discussions](../../discussions)
-
-## Citation
-
-If you use SenseFS in your research, please cite:
-
-```bibtex
-@software{sensefs2024,
-  title = {SenseFS: Semantic File Search for macOS},
-  author = {Your Name},
-  year = {2024},
-  url = {https://github.com/yourusername/sensefs}
-}
-```
 
 ---
 
