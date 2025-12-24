@@ -8,7 +8,7 @@
 
 ## Overview
 
-SenseFS is a native macOS application that brings powerful semantic search to your local files. Unlike traditional keyword search, SenseFS understands the *meaning* of your queries and finds relevant content even when exact keywords don't match.
+SenseFS is a native macOS application that brings semantic search to your local files. Unlike traditional keyword search, SenseFS understands the *meaning* of your queries and finds relevant content even when exact keywords don't match.
 
 ### Key Features
 
@@ -21,10 +21,6 @@ SenseFS is a native macOS application that brings powerful semantic search to yo
 - 🎨 **Native UI** - SwiftUI with 4 tabs: Search, Index, Licenses, Settings
 - 📊 **Organized Results** - File grouping, chunk counts, relevance scores with color coding
 - 📜 **Open Source** - Full dependency attribution in Licenses tab
-
-## Screenshots
-
-> Beautiful, native macOS interface with semantic search capabilities
 
 ## Quick Start
 
@@ -95,10 +91,9 @@ open SenseFS.xcodeproj
 - **Auto-Skip Patterns**: Automatically excludes:
   - **Directories**: `node_modules`, `.git`, `.venv`, `build`, `dist`, `.next`, and 15+ more
   - **Common Files**: README, LICENSE, CHANGELOG, CONTRIBUTING
-- **Progress Tracking**: Real-time progress with ETA and error reporting
 - **Configurable Limits**:
-  - Max file size: 10 MB (default, configurable)
-  - Max database size: 1 GB (default, configurable)
+  - Max file size: 10 MB
+  - Max database size: 1 GB
 
 ### Performance Optimizations
 - **Neural Engine Acceleration**: Uses Apple Silicon Neural Engine for fast inference
