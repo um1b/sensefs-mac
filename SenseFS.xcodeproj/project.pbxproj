@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5974AAE82EFC388700492E26 /* AgenticRAGService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5974AAE72EFC388700492E26 /* AgenticRAGService.swift */; };
+		5974AAEA2EFC481300492E26 /* LicensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5974AAE92EFC481300492E26 /* LicensesView.swift */; };
+		AA0001 /* SenseFSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0001 /* SenseFSApp.swift */; };
+		AA0002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0002 /* ContentView.swift */; };
+		AA0003 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0003 /* SearchView.swift */; };
+		AA0004 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0004 /* ChatView.swift */; };
+		AA0005 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0005 /* IndexView.swift */; };
+		AA0006 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0006 /* SettingsView.swift */; };
+		AA0007 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0007 /* AppSettings.swift */; };
+		AA0008 /* CoreMLEmbeddingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0008 /* CoreMLEmbeddingService.swift */; };
+		AA0009 /* IndexingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0009 /* IndexingService.swift */; };
+		AA0010 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0010 /* DatabaseManager.swift */; };
+		AA0011 /* VectorDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0011 /* VectorDatabase.swift */; };
+		AA0012 /* RAGService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0012 /* RAGService.swift */; };
+		AA0013 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0013 /* SearchResult.swift */; };
+		AA0014 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0014 /* ChatMessage.swift */; };
+		AA0015 /* VisionOCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0015 /* VisionOCRService.swift */; };
+		AA0016 /* PDFTextExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0016 /* PDFTextExtractor.swift */; };
+		AA0017 /* OfficeDocumentExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0017 /* OfficeDocumentExtractor.swift */; };
+		AA0018 /* TextChunker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0018 /* TextChunker.swift */; };
+		AA0019 /* SpellChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0019 /* SpellChecker.swift */; };
+		AA0020 /* EmbeddingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0020 /* EmbeddingService.swift */; };
+		AA0021 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0021 /* LanguageModel.swift */; };
+		AA0022 /* ProgressAnimationTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0022 /* ProgressAnimationTestView.swift */; };
+		AA0100 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = CC0100 /* ZIPFoundation */; };
+		AA0101 /* Transformers in Frameworks */ = {isa = PBXBuildFile; productRef = CC0101 /* Transformers */; };
+		AA0200 /* schema.sql in Resources */ = {isa = PBXBuildFile; fileRef = BB0200 /* schema.sql */; };
+		AA0201 /* multilingual-e5-small-fp16.mlpackage in Resources */ = {isa = PBXBuildFile; fileRef = BB0201 /* multilingual-e5-small-fp16.mlpackage */; };
+		AA0202 /* e5-tokenizer in Resources */ = {isa = PBXBuildFile; fileRef = BB0202 /* e5-tokenizer */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5974AAE72EFC388700492E26 /* AgenticRAGService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgenticRAGService.swift; sourceTree = "<group>"; };
+		5974AAE92EFC481300492E26 /* LicensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensesView.swift; sourceTree = "<group>"; };
+		BB0001 /* SenseFSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenseFSApp.swift; sourceTree = "<group>"; };
+		BB0002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB0003 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		BB0004 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		BB0005 /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
+		BB0006 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BB0007 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		BB0008 /* CoreMLEmbeddingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLEmbeddingService.swift; sourceTree = "<group>"; };
+		BB0009 /* IndexingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexingService.swift; sourceTree = "<group>"; };
+		BB0010 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		BB0011 /* VectorDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorDatabase.swift; sourceTree = "<group>"; };
+		BB0012 /* RAGService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAGService.swift; sourceTree = "<group>"; };
+		BB0013 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		BB0014 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		BB0015 /* VisionOCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOCRService.swift; sourceTree = "<group>"; };
+		BB0016 /* PDFTextExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTextExtractor.swift; sourceTree = "<group>"; };
+		BB0017 /* OfficeDocumentExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeDocumentExtractor.swift; sourceTree = "<group>"; };
+		BB0018 /* TextChunker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextChunker.swift; sourceTree = "<group>"; };
+		BB0019 /* SpellChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellChecker.swift; sourceTree = "<group>"; };
+		BB0020 /* EmbeddingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddingService.swift; sourceTree = "<group>"; };
+		BB0021 /* LanguageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
+		BB0022 /* ProgressAnimationTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressAnimationTestView.swift; sourceTree = "<group>"; };
+		BB0100 /* SenseFS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SenseFS.entitlements; sourceTree = "<group>"; };
+		BB0200 /* schema.sql */ = {isa = PBXFileReference; lastKnownFileType = text; path = schema.sql; sourceTree = "<group>"; };
+		BB0201 /* multilingual-e5-small-fp16.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = "multilingual-e5-small-fp16.mlpackage"; sourceTree = "<group>"; };
+		BB0202 /* e5-tokenizer */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "e5-tokenizer"; sourceTree = "<group>"; };
+		DD0001 /* SenseFS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SenseFS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE0001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0100 /* ZIPFoundation in Frameworks */,
+				AA0101 /* Transformers in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF0001 = {
+			isa = PBXGroup;
+			children = (
+				FF0002 /* SenseFS */,
+				FF0003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF0002 /* SenseFS */ = {
+			isa = PBXGroup;
+			children = (
+				BB0001 /* SenseFSApp.swift */,
+				BB0100 /* SenseFS.entitlements */,
+				BB0201 /* multilingual-e5-small-fp16.mlpackage */,
+				BB0202 /* e5-tokenizer */,
+				FF0010 /* Core */,
+				FF0011 /* Database */,
+				FF0012 /* Services */,
+				FF0013 /* Models */,
+				FF0014 /* Views */,
+				FF0015 /* UI */,
+			);
+			path = SenseFS;
+			sourceTree = "<group>";
+		};
+		FF0003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD0001 /* SenseFS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF0010 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BB0007 /* AppSettings.swift */,
+				BB0008 /* CoreMLEmbeddingService.swift */,
+				BB0020 /* EmbeddingService.swift */,
+				BB0009 /* IndexingService.swift */,
+				BB0017 /* OfficeDocumentExtractor.swift */,
+				BB0016 /* PDFTextExtractor.swift */,
+				BB0019 /* SpellChecker.swift */,
+				BB0018 /* TextChunker.swift */,
+				BB0015 /* VisionOCRService.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FF0011 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				BB0010 /* DatabaseManager.swift */,
+				BB0011 /* VectorDatabase.swift */,
+				BB0200 /* schema.sql */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		FF0012 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5974AAE72EFC388700492E26 /* AgenticRAGService.swift */,
+				BB0012 /* RAGService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FF0013 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB0014 /* ChatMessage.swift */,
+				BB0021 /* LanguageModel.swift */,
+				BB0013 /* SearchResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF0014 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5974AAE92EFC481300492E26 /* LicensesView.swift */,
+				BB0004 /* ChatView.swift */,
+				BB0005 /* IndexView.swift */,
+				BB0022 /* ProgressAnimationTestView.swift */,
+				BB0003 /* SearchView.swift */,
+				BB0006 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF0015 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BB0002 /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		GG0001 /* SenseFS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = HH0001 /* Build configuration list for PBXNativeTarget "SenseFS" */;
+			buildPhases = (
+				GG0002 /* Sources */,
+				EE0001 /* Frameworks */,
+				GG0003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SenseFS;
+			packageProductDependencies = (
+				CC0100 /* ZIPFoundation */,
+				CC0101 /* Transformers */,
+			);
+			productName = SenseFS;
+			productReference = DD0001 /* SenseFS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		II0001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					GG0001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = HH0002 /* Build configuration list for PBXProject "SenseFS" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF0001;
+			packageReferences = (
+				JJ0100 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				JJ0101 /* XCRemoteSwiftPackageReference "swift-transformers" */,
+			);
+			productRefGroup = FF0003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				GG0001 /* SenseFS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		GG0003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0200 /* schema.sql in Resources */,
+				AA0201 /* multilingual-e5-small-fp16.mlpackage in Resources */,
+				AA0202 /* e5-tokenizer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		GG0002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0001 /* SenseFSApp.swift in Sources */,
+				AA0002 /* ContentView.swift in Sources */,
+				AA0003 /* SearchView.swift in Sources */,
+				AA0004 /* ChatView.swift in Sources */,
+				AA0005 /* IndexView.swift in Sources */,
+				AA0006 /* SettingsView.swift in Sources */,
+				5974AAEA2EFC481300492E26 /* LicensesView.swift in Sources */,
+				AA0007 /* AppSettings.swift in Sources */,
+				AA0008 /* CoreMLEmbeddingService.swift in Sources */,
+				AA0009 /* IndexingService.swift in Sources */,
+				AA0010 /* DatabaseManager.swift in Sources */,
+				AA0011 /* VectorDatabase.swift in Sources */,
+				AA0012 /* RAGService.swift in Sources */,
+				5974AAE82EFC388700492E26 /* AgenticRAGService.swift in Sources */,
+				AA0013 /* SearchResult.swift in Sources */,
+				AA0014 /* ChatMessage.swift in Sources */,
+				AA0015 /* VisionOCRService.swift in Sources */,
+				AA0016 /* PDFTextExtractor.swift in Sources */,
+				AA0017 /* OfficeDocumentExtractor.swift in Sources */,
+				AA0018 /* TextChunker.swift in Sources */,
+				AA0019 /* SpellChecker.swift in Sources */,
+				AA0020 /* EmbeddingService.swift in Sources */,
+				AA0021 /* LanguageModel.swift in Sources */,
+				AA0022 /* ProgressAnimationTestView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		KK0001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SenseFS/SenseFS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sensefs.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		KK0002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SenseFS/SenseFS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sensefs.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		KK0003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		KK0004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		HH0001 /* Build configuration list for PBXNativeTarget "SenseFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				KK0001 /* Debug */,
+				KK0002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		HH0002 /* Build configuration list for PBXProject "SenseFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				KK0003 /* Debug */,
+				KK0004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		JJ0100 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		JJ0101 /* XCRemoteSwiftPackageReference "swift-transformers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huggingface/swift-transformers.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC0100 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = JJ0100 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		CC0101 /* Transformers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = JJ0101 /* XCRemoteSwiftPackageReference "swift-transformers" */;
+			productName = Transformers;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = II0001 /* Project object */;
+}

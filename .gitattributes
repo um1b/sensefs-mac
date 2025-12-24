@@ -1,0 +1,2 @@
+SenseFS/multilingual-e5-small-fp16.mlpackage/Data/com.apple.CoreML/weights/weight.bin filter=lfs diff=lfs merge=lfs -text
+SenseFS/e5-tokenizer/tokenizer.json filter=lfs diff=lfs merge=lfs -text
