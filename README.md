@@ -35,19 +35,31 @@ SenseFS is a native macOS application that brings powerful semantic search to yo
 
 ### Installation
 
-#### Option 1: Download Release (Recommended)
+#### Option 1: Download .app (Recommended)
 
-1. Download the latest `.dmg` from [Releases](../../releases)
-2. Open the `.dmg` file
-3. Drag `SenseFS.app` to your Applications folder
-4. Launch SenseFS
+1. **Download** the latest `SenseFS.app.zip` from [Releases](../../releases)
+2. **Unzip** the downloaded file (double-click or use `unzip`)
+3. **Move** `SenseFS.app` to your Applications folder
+4. **First Launch**:
+   - Right-click on `SenseFS.app` → Open (or use Finder → Applications → SenseFS)
+   - Click "Open" when macOS shows the security warning
+   - (Only needed first time - app is not notarized)
+5. **Grant Permissions**:
+   - Allow file access when indexing folders
+   - No other permissions required
+
+> **Note**: If macOS prevents opening, go to System Settings → Privacy & Security → Allow apps from App Store and identified developers
 
 #### Option 2: Build from Source
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/sensefs.git
-cd sensefs/sensefs-mac
+git clone https://github.com/yourusername/sensefs-mac.git
+cd sensefs-mac
+
+# Install Git LFS (if not already installed)
+brew install git-lfs
+git lfs pull  # Download ML models
 
 # Open in Xcode
 open SenseFS.xcodeproj
@@ -66,6 +78,43 @@ open SenseFS.xcodeproj
    - Type your query in natural language
    - Results appear instantly with relevance scores
    - Click any result to open the file
+
+## Key Improvements & Features
+
+### Advanced Search
+- **Semantic Understanding**: Multilingual-e5-small embeddings (384 dimensions)
+- **Smart Re-ranking**: Beyond cosine similarity with 6 ranking signals
+- **Spell Correction**: Automatic query correction for better results
+- **Filename Boosting**: 50% score boost for filename matches
+- **Token-Based Truncation**: Accurate context window management
+
+### Intelligent Indexing
+- **Change Detection**: Only re-indexes modified files (timestamp + size)
+- **Smart Chunking**: 512 characters with 1-sentence overlap
+- **Auto-Skip Patterns**: Excludes node_modules, .git, build folders (20+ patterns)
+- **Incremental Updates**: Fast re-indexing of changed files only
+- **Multi-Format Support**: Text, PDF, Images (OCR), Office documents
+
+### Performance Optimizations
+- **Batch Embedding**: Process multiple chunks in one inference call
+- **Neural Engine**: Hardware-accelerated embeddings (~50ms per chunk)
+- **SQLite WAL Mode**: Concurrent reads during indexing
+- **Debounced Search**: 300ms delay to prevent excessive queries
+- **Memory-Efficient**: Streaming search results, limited context windows
+
+### User Experience
+- **Markdown Rendering**: Rich text formatting in chat responses
+- **Loading Animation**: Visual feedback during AI processing
+- **Max Score Display**: Show best match per file (not average)
+- **Licenses Tab**: Full open-source attribution
+- **Settings Validation**: No fake "connecting to server" delays
+
+### RAG System (Chat Feature)
+- **Multi-Strategy Retrieval**: Agentic RAG with query expansion
+- **Anti-Hallucination**: 50% relevance threshold, strict prompt rules
+- **Full Document Context**: Retrieves complete files (not just chunks)
+- **Source Attribution**: Links to original documents
+- **Conversation History**: Last 5 turns preserved for follow-ups
 
 ## Supported File Formats
 
