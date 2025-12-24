@@ -333,16 +333,6 @@ All licenses are viewable in the **Licenses tab** within the app.
 - ✅ SQLite vector database with WAL mode
 - ✅ Full dependency attribution
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-### Development Guidelines
-
-1. Follow Swift API Design Guidelines
-2. Use SwiftLint for code style
-3. Add tests for new features
-4. Update documentation
 
 ## License
 
@@ -354,6 +344,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Apple** for CoreML and Metal Performance Shaders
 - **swift-transformers** contributors
 
+## Support
+
+- 🐛 Issues: [GitHub Issues](../../issues)
+- 💬 Discussions: [GitHub Discussions](../../discussions)
 
 
 ---
