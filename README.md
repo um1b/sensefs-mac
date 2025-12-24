@@ -321,34 +321,22 @@ All licenses are viewable in the **Licenses tab** within the app.
 - Clear index and reindex with smaller file set
 - Restart app to free cached data
 
-## Roadmap
+## Features
 
-### ✅ Current Version (v1.0)
-- [x] Semantic search with 384-dim embeddings
-- [x] 4 main tabs: Search, Index, Licenses, Settings
-- [x] Multi-format support (Text, PDF, Office, Images with OCR)
-- [x] 12+ language auto-detection
-- [x] Change detection and incremental reindexing
-- [x] Auto-skip patterns (20+ directories)
-- [x] Configurable size limits
-- [x] Error reporting and progress tracking
-- [x] File grouping with chunk counts
-- [x] Color-coded relevance scores
-- [x] Neural Engine acceleration
-- [x] SQLite vector database with WAL mode
-- [x] Full dependency attribution
-
-### 🔮 Future Enhancements
-- [ ] Custom skip patterns (user-defined)
-- [ ] Multi-folder indexing (multiple root directories)
-- [ ] Export search results (CSV/JSON)
-- [ ] Search history
-- [ ] Saved searches/filters
-- [ ] Spotlight integration
-- [ ] iCloud sync (cross-device indexing)
-- [ ] Boolean operators (AND, OR, NOT)
-- [ ] Date range filters
-- [ ] File type filters in search
+### ✅ What's Included
+- ✅ Semantic search with 384-dim embeddings
+- ✅ 4 main tabs: Search, Index, Licenses, Settings
+- ✅ Multi-format support (Text, PDF, Office, Images with OCR)
+- ✅ 12+ language auto-detection
+- ✅ Change detection and incremental reindexing
+- ✅ Auto-skip patterns (20+ directories)
+- ✅ Configurable size limits
+- ✅ Error reporting and progress tracking
+- ✅ File grouping with chunk counts
+- ✅ Color-coded relevance scores
+- ✅ Neural Engine acceleration
+- ✅ SQLite vector database with WAL mode
+- ✅ Full dependency attribution
 
 ## Contributing
 
